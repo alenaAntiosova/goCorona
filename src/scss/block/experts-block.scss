@@ -1,0 +1,126 @@
+.experts-block {
+   padding: 103px 0px 116px 0px;
+
+   &__text {
+      max-width: 400px;
+      flex: 0 1 50%;
+      padding: 0px 20px 0px 0px;
+      @media (max-width: $mobile) {
+         flex: 1 1 100%;
+         margin: 0px 0px 40px 0px;
+         text-align: center;
+         max-width: 100%;
+      }
+   }
+
+   &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: $mobile) {
+         flex-direction: column;
+         align-items: stretch;
+      }
+   }
+
+   &__video {
+      position: relative;
+      flex: 0 1 50%;
+      padding: 0px 0px 30% 0px;
+      @media (max-width: $mobile) {
+         padding: 0px 0px 58% 0px;
+      }
+   }
+
+   &__youtube {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      box-shadow: 0px 4px 18px rgb(88 126 236 / 18%);
+      border-radius: 8px;
+      overflow: hidden;
+   }
+}
+
+.statistics-experts {
+   position: relative;
+   max-width: 655px;
+   margin: 0 auto;
+   &__block {
+      padding: 25px 80px;
+      display: flex;
+      background: #ffffff;
+      box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+      border-radius: 16px;
+      position: relative;
+      justify-content: space-between;
+      z-index: 5;
+      margin: 0px 0px 110px 0px;
+      @media (max-width: 560px) {
+         flex-direction: column;
+      }
+   }
+
+   &__item {
+      flex: 0 1 25%;
+      text-align: center;
+      @media (max-width: 560px) {
+         &:not(:last-child) {
+            margin: 0px 0px 15px 0px;
+         }
+      }
+   }
+
+   &__value {
+      font-weight: bold;
+      font-size: rem(36);
+      line-height: 1.19;
+      letter-spacing: 0.14em;
+      color: $redColor;
+      @media (max-width: 640px) {
+         font-size: rem(25);
+      }
+   }
+
+   &__text {
+      font-weight: bold;
+      font-size: rem(11);
+      line-height: 1.18;
+      letter-spacing: 0.37em;
+      text-transform: uppercase;
+      color: black;
+   }
+
+   &__decor {
+      position: absolute;
+      border-radius: 30px;
+      background-color: $redColor;
+
+      &--decor-1 {
+         width: 65px;
+         height: 65px;
+         transform: rotate(-30deg);
+         bottom: -21px;
+         left: -21px;
+         border-radius: 16px;
+      }
+
+      &--decor-2 {
+         width: 96px;
+         height: 96px;
+         transform: rotate(-105deg);
+         right: 50%;
+         top: -40px;
+      }
+      &--decor-3 {
+         width: 127px;
+         height: 127px;
+         left: 90%;
+         top: 10%;
+         transform: rotate(-30deg);
+      }
+   }
+}

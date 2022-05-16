@@ -1,0 +1,17 @@
+.footer {
+   &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: $mobile) {
+         flex-direction: column;
+      }
+   }
+
+   &__button:first-child {
+      margin-right: 75px;
+      @media (max-width: $mobile) {
+         margin-right: 0px;
+      }
+   }
+}

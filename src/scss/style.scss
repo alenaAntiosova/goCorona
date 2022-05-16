@@ -1,0 +1,63 @@
+@use "sass:math";
+@import "base/mixins.scss";
+@import url(https://fonts.googleapis.com/css?family=Rubik:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:700,800);
+
+$fontFamily: "Rubik";
+$fontSize: rem(12);
+
+$mainBgColor: #fafbfd;
+$redColor: #ec5863;
+$blueColor: #4285f4;
+$mainFonts: #616161;
+
+$minWidth: 320px;
+$maxWidth: 1200px;
+$maxWidthContainer: 1110px;
+$containerPadding: 20px;
+
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+$tablet: em(991.98);
+$mobile: em(767.98);
+$mobileSmall: em(479.98);
+
+$responsiveType: 1;
+
+@import "base/null.scss";
+body {
+	color: $mainFonts;
+	font-style: normal;
+	font-weight: normal;
+	&.--lock {
+		overflow: hidden;
+		touch-action: none;
+	}
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	// Фикс для слайдеров
+	> * {
+		min-width: 0;
+	}
+}
+.container {
+	margin: 0 auto;
+	max-width: $maxWidthContainer;
+	padding: $containerPadding;
+}
+.page {
+	flex: 1 1 auto;
+}
+//@import "base/fonts";
+@import "base/icons.scss";
+@import "block/header.scss";
+@import "block/main-screen.scss";
+@import "block/footer.scss";
+@import "block/platform.scss";
+@import "block/experts-block.scss";
+@import "block/features";

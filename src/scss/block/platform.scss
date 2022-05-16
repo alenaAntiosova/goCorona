@@ -1,0 +1,40 @@
+.platform-block {
+   &__wrapper {
+      display: flex;
+      padding: 40px 0px;
+      align-items: center;
+      @media (max-width: $mobile) {
+         flex-direction: column-reverse;
+      }
+   }
+
+   &__media {
+      padding: 0px 0px 0px 47px;
+      margin: 0px 187px 0px 0px;
+      @media (max-width: $tablet) {
+         margin: 0px 100px 0px 0px;
+      }
+      @media (max-width: $mobile) {
+         margin: 0px 0px 0px 0px;
+         padding: 0px 0px 0px 0px;
+      }
+   }
+
+   &__text {
+      margin: 0px 0px 40px 0px;
+      @media (max-width: $mobile) {
+         text-align: center;
+      }
+   }
+
+   &__img {
+      max-width: 100%;
+   }
+
+   &__img-block {
+      width: 338px;
+      @media (max-width: $tablet) {
+         width: 100%;
+      }
+   }
+}
